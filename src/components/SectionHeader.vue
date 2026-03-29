@@ -19,7 +19,6 @@
 <script setup>
 
 // vue
-import { ref, onMounted } from 'vue';
 
 </script>
 <style lang="scss" scoped>
@@ -34,7 +33,7 @@ import { ref, onMounted } from 'vue';
 		
 		/* border: 1px solid red; */
 
-		background: rgba(255, 255, 255, 0.25);
+		background: rgba(158, 238, 205, 0.25);
 		font-size: 30px;
 		color: white;
 		text-align: center;
@@ -42,8 +41,8 @@ import { ref, onMounted } from 'vue';
 		padding: 5px;
 
 		// well do some cool nesting borders
-		border-top: 3px solid white;
-		border-bottom: 3px solid white;
+		border-top: 3px solid #077B95;
+		border-bottom: 3px solid #077B95;
 
 		h2 {
 
@@ -56,14 +55,14 @@ import { ref, onMounted } from 'vue';
 
 	.outer-border-2 {
 		padding: 3px 0px;
-		border-top: 2px solid white;
-		border-bottom: 2px solid white;
+		border-top: 2px solid #077B95;
+		border-bottom: 2px solid #077B95;
 	}
 
 	.outer-border-1 {
 		padding: 2px 0px;
-		border-top: 1px solid white;
-		border-bottom: 1px solid white;
+		border-top: 1px solid #077B95;
+		border-bottom: 1px solid #077B95;
 
 		/* box-sizing: content-box; */
 		margin-top: 150px;

@@ -84,7 +84,7 @@ defineProps({
 			margin: 1rem 0;
 		}
 
-			// blurbs above & below the video
+		// blurbs above & below the video
 		.blurb-top,
 		.blurb-bottom {
 
@@ -96,14 +96,14 @@ defineProps({
 			align-items: center;
 
 			font-size: 1.1rem;
-			color: #555;
+			color: #015a6e;
 			a {
 				font-style: italic;
 			}
 			
 
 			div {
-				background: white;
+				background: rgba(158, 238, 205, 0.6);
 				border-radius: 100px;
 				padding: 20px 25px;
 			}

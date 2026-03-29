@@ -21,7 +21,7 @@
 	<div class="overview-box">
 
 		<div align="center">
-			<img class="logo" src="/img/VWM_logo.png" alt="Vue Win Mgr Logo" width="200px"/>
+			<img class="logo" src="/img/VSP_logo.png" alt="Vue Win Mgr Logo" width="200px"/>
 		</div>
 
 		<h2>vue-win-mgr In a Nutshell:</h2>
@@ -185,9 +185,9 @@ import {
 			<div class="box">
 				<div>
 					Find it on
-					<a href="https://github.com/orokro/Vue-Window-Manager" target="_blank">GitHub:</a>
+					<a href="https://github.com/orokro/vue-settings-panel" target="_blank">GitHub:</a>
 				</div>
-				<a href="https://github.com/orokro/Vue-Window-Manager" target="_blank">
+				<a href="https://github.com/orokro/vue-settings-panel" target="_blank">
 					<img class="site-logo" src="/img/github_logo.png" alt="GitHub Logo" height="100px"/>
 				</a>
 			</div>

@@ -16,7 +16,7 @@
 			<!-- the entire logo will link to github cuz why not -->
 			<a 
 				class="github-link"
-				href="https://github.com/orokro/Vue-Window-Manager"
+				href="https://github.com/orokro/vue-settings-panel"
 				target="_blank"
 			>
 
@@ -24,7 +24,7 @@
 				<div class="logo-circle">
 					<img 
 						class="logo" 
-						src="/img/VWM_logo.png"
+						src="/img/VSP_logo.png"
 						alt="Logo"
 						height="100%"
 					/>
@@ -33,7 +33,7 @@
 				<!-- logo text -->
 				<h1 class="logo-text box-bg-color">
 					<span>
-						vue-win-mgr
+						vue-settings-panel
 					</span>
 				</h1>
 
@@ -196,10 +196,10 @@ onUnmounted(() => {
 		width: 100vw;
 
 		// dark blur background
-		background: rgba(255, 255, 255, 0.6);
+		background: rgba(158, 238, 205, 0.6);
 		backdrop-filter: blur(15px);
 
-		border-bottom: 3px solid white;
+		border-bottom: 3px solid #077B95;
 
 		// gradient background
 		.bg-horizontal-gradient {
@@ -212,7 +212,7 @@ onUnmounted(() => {
 
 		// common bg color
 		.box-bg-color {
-			background: rgba(255, 255, 255, .9);
+			background: #d9f4fe;
 		}
 
 		// stack stuff left
@@ -235,7 +235,7 @@ onUnmounted(() => {
 		.logo-box {
 
 			// fixed size
-			width: 360px;
+			width: 440px;
 			height: 80px;
 
 			/* border: 1px solid red; */
@@ -279,7 +279,7 @@ onUnmounted(() => {
 				padding: 0px 20px 0px 5px;
 
 				// text styles
-				color: #7d50f8;
+				color: #35AA8F;
 				font-weight: bolder;
 				font-style: italic;
 
@@ -321,7 +321,7 @@ onUnmounted(() => {
 					font-weight: inherit;
 					position: relative;
 					top: -4px;
-					color: #7d50f8
+					color: #35AA8F
 				}
 
 				&:hover {
@@ -378,7 +378,7 @@ onUnmounted(() => {
 					cursor: pointer;
 					
 					// text styles
-					color: #8860f7;
+					color: #35AA8F;
 					font-weight: bold;
 					transition: color 0.3s ease;
 
@@ -389,12 +389,12 @@ onUnmounted(() => {
 					}// span
 
 					&:hover {
-						color: #00ABAE;
+						color: #6c35aa;
 						font-weight: bolder;
 					}
 					
 					&.active {
-						color: white;
+						color: #d9f4fe;
 						font-weight: bolder;
 					}
 					
@@ -413,7 +413,7 @@ onUnmounted(() => {
 					width: 82.5px;
 
 					// nice teal styles
-					background: #7d50f8;
+					background: #35AA8F;
 
 					// same shape as .nav-container
 					border-radius: 40px 5px;
