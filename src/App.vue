@@ -125,17 +125,17 @@
 		<br><br>
 
 
-		<h2>vue-win-mgr Tutorial:</h2>
+		<h2>vue-settings-panel Tutorial:</h2>
 		<br>
 		<p>
-			Below is a full tutorial for how to get started with with the <code>vue-win-mgr</code>!
+			Below is a full tutorial for how to get started with with the <code>vue-settings-panel</code>!
 		</p>
 		<br>
 		<div align="center" style="min-height: 60vh;">
 			<iframe
 				width="100%"
 				style="width: 100%; aspect-ratio: 16/9; max-width: 1200px;"
-				src="https://www.youtube.com/watch?v=lzsGuybSp0Y"
+				src="https://www.youtube.com/embed/lzsGuybSp0Y?si=_8oncldvIKGlMmLv"
 				title="YouTube video player"
 				frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
