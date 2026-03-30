@@ -121,7 +121,7 @@ import 'vue-settings-panel/dist/style.css';</pre>
 
 	<br><br>
 	<br><br>
-	<div class="copy-right">&copy; Greg Miller / Orokro, 2025</div>
+	<div class="copy-right">&copy; Greg Miller / Orokro, 2026</div>
 	<br><br>
 </template>
 <script setup>
