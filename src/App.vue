@@ -11,7 +11,7 @@
 	<br><br><br><br>
 	<IntroVideoBox
 		video-url="Demo-Reel.mp4"
-		top-blurb="Check out the demo reel below & scroll down to learn how to use vue-win-mgr!"
+		top-blurb="Check out the demo reel below & scroll down to learn how to use vue-settings-panel!"
 	/>
 
 	<!-- overview video -->
@@ -24,107 +24,29 @@
 			<img class="logo" src="/img/VSP_logo.png" alt="Vue Win Mgr Logo" width="200px"/>
 		</div>
 
-		<h2>vue-win-mgr In a Nutshell:</h2>
+		<h2>vue-settings-panel In a Nutshell:</h2>
 		<br>
-		<p>
-			The <code>vue-win-mgr</code> library is easy to implement. It just uses regular ol' Vue components as it's windows.
-			They don't need to meet any specific requirements. You can use <em>any</em> state solution you want for your app,
-			just think of the windows as Vue components that can be moved around, docked, snapped, resized, closed, etc.
-		</p>
-		<br/>
-		<p>Just import a bunch of components to use as windows:</p>
+		<p>vue-settings-panel is really easy to set up and use in your Vue3 projects.</p>
+		<p>First, after installing the library you'll want to import the important bits:</p>
 		<br>
-		<img src="/img/overview_00_regular_components.png" width="100%" class="code-screen" style="max-width: 778px;"/>
-
-		<br><br><br><br>
-		<p>
-			Next, prepare the windows in an Array, by providing:
-		</p>
-		<ul>
-			<li><strong>window</strong> &mdash; the imported Vue component constructor</li>
-			<li><strong>title</strong> &mdash; a title for the window when instantiated (this can be programmatically changed as well)</li>
-			<li><strong>slug</strong> &mdash; a string we can refer to this window kind in layouts or code</li>
-			<li><strong>icon</strong> &mdash; and optional path to an image to use as the window icon</li>
-		</ul>
+		<img src="/img/overview_00_imports.png" alt="Code Snippet Showing Imports" width="100%"/>
 		<br>
-		<p>
-			See the example here:
-		</p>
+		<p>Next you need to define a specification object, with categories for settings defined in an array, as well as an object of settings definitions.</p>
 		<br>
-		<img src="/img/overview_10_arrray_of_windows.png" width="100%" class="code-screen" style="max-width: 527px;"/>
-
-		<br><br><br><br>
-
-		<p>
-			If you want, you can also use the window managers built in header (top bar) and status bar system.
-			<br><br>
-			Let's bring in some components:
-		</p>
+		<img src="/img/overview_10_define_spec.png" alt="Define Specification" width="100%"/>
 		<br>
-		<img src="/img/overview_20_headerbar_and_statusbar_components_as_well.png" width="100%" class="code-screen" style="max-width: 487px;"/>
-
-		<br><br><br><br>
-
-		<p>
-			Now let's put it all together!
-			<br><br>
-			The snippet below is a pretty self-explanatory example of the <code>&lt;WindowManager\&gt;</code> component
-			implemented in a template.
-			<br><br>
-			You can check out the layout field in the docs below for a full breakdown (it's easy)
-		</p>
+		<p>You can also use the optional <code>createSttings</code> method to make an object with all your settings and default values prefilled.</p>
 		<br>
-		<img src="/img/overview_30_implementing_the_component.png" width="100%" class="code-screen" style="max-width: 969px;"/>
-
-		<br><br><br><br>
-
-		<p>
-			If you don't want to make components for the header and status bar, you can use named slots
-			as well, consider the example below:
-		</p>
+		<p>If you wish to listen to changes to settings, you can also pass an <code>@settings-changed</code> callback to the <code>VueSettingsPanel</code> component.</p>
+		<img src="/img/overview_20_optional.png" alt="Optional Settings" width="100%"/>
 		<br>
-		<img src="/img/overview_40_named_slots_alternative.png" width="100%" class="code-screen" style="max-width: 726px;"/>
-
-		<br><br><br><br>
-
-		<p>
-			That's pretty much it! <br>
-			Of course, there's plenty more to discuss, but that's the gist of it.
-			<br><br>
-			You can also programmatically interact with the system via three provided contexts:
-		</p>
-		<ul>
-			<li>
-				<strong>WindowManagerContext</strong> &mdash; 
-				Allows some global settings to be changed programmatically &amp; layouts to be exported/loaded.
-			</li>
-			<li>
-				<strong>WindowFrameContext</strong> &mdash; 
-				Windows can interact with the WindowFrame they're docked in programmatically.
-			</li>
-			<li>
-				<strong>WindowContext</strong> &mdash; 
-				Allows your window components to manipulate their actual window instance, like setting title programmatically.
-			</li>
-		</ul>
+		<p>Lastly, just drop the <code>&lt;VueSettingsPanel /&gt;</code> component into your template.</p>
+		<p>You can also provide a <code>:theme-colors="{}"</code> prop to customize the colors of the panel if you want.</p>
 		<br>
-		<p>
-			For the window manager you can just add a ref to the component, like so
-		</p>
-		<img src="/img/overview_50_add_ref_to_mananger.png" width="100%" class="code-screen" style="max-width: 463px;"/>
+		<img src="/img/overview_30_template.png" alt="Template Example" width="100%"/>
 		<br>
-		<p>
-			You can then call <code>.getContext()</code> on the component reference to get the <code>WindowManagerContext</code>
-		</p>
+
 		<br>
-		<p>
-			For the others, you can <code>inject</code> them into your components, like so:
-		</p>
-		<img src="/img/overview_60_geting_contexts.png" width="100%" class="code-screen" style="max-width: 577px;"/>
-
-		<br><br>
-
-
 		<h2>vue-settings-panel Tutorial:</h2>
 		<br>
 		<p>
@@ -156,10 +78,12 @@
 		<h3>With NPM:</h3>	
 		<pre class="code">npm install vue-settings-panel</pre>
 		Then...
-		<pre class="code">import { VueSettingsPanel, TYPES, createSettings } from 'vue-settings-panel';</pre>
+		<pre class="code">
+import { VueSettingsPanel, TYPES, createSettings } from 'vue-settings-panel';
+import 'vue-settings-panel/dist/style.css';</pre>
 
 		<br><br>
-		<h2>Check out vue-win-mgr over here:</h2>
+		<h2>Check out vue-settings-panel over here:</h2>
 		<div class="row">
 
 			<div class="box">
