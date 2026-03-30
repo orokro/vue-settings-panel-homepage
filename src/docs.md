@@ -27,6 +27,7 @@
   - 🕐 Time
   - ⌨️ KeyInput
   - 🔌 GenericInput
+  - 🧩 Custom Types
 - 🛠️ `createSettings` Utility
 - 🎨 Theming System
   - 🖌️ Full Theme Reference
@@ -638,6 +639,91 @@ A fully external-driven capture widget. It displays a placeholder and a capture 
 |--------|------|-------------|
 | `onInputRequest` | `Function` | **Required for useful behavior.** Called with a `set(value)` function when capture is initiated. While waiting for input, the widget displays a "Waiting for input…" state. Call `set(value)` with the captured value to finalize. |
 | `placeholder` | `String` | Text shown in the widget before any value is captured. |
+
+---
+
+## 🧩 Custom Types
+
+You can define your own input type by creating a **type object** and a Vue component that implements the required interface. Custom types are used exactly like built-in `TYPES` entries in your specification.
+
+### Type Object Shape
+
+```js
+const MyCustomType = {
+  name: 'MyType',      // Display name (used internally)
+  slug: 'my-type',     // Unique identifier string
+  component: MyComponent, // Vue component that renders the input
+}
+```
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `name` | `String` | ✅ Yes | Human-readable name for the type. |
+| `slug` | `String` | ✅ Yes | Unique kebab-case identifier. Must not collide with built-in slugs. |
+| `component` | `Component` | ✅ Yes | The Vue component that renders the input widget. |
+
+### Component Interface
+
+Your component must accept these props and emit the `change` event:
+
+**Props:**
+
+| Prop | Type | Description |
+|------|------|-------------|
+| `value` | `Any` | The current setting value. Treat this as read-only — never mutate it directly. |
+| `opts` | `Object` | The `opts` object from the setting definition. Use this to pass configuration into your component. |
+
+**Emits:**
+
+| Event | Payload | Description |
+|-------|---------|-------------|
+| `change` | `newValue` | Emit this whenever the user changes the value. The panel stores the emitted value and triggers `settings-changed`. |
+
+### Example
+
+```vue
+<!-- Vec2Edit.vue -->
+<script setup>
+const props = defineProps({ value: Object, opts: Object })
+const emit = defineEmits(['change'])
+
+const update = (axis, raw) => {
+  emit('change', { ...props.value, [axis]: Number(raw) })
+}
+</script>
+
+<template>
+  <div class="vec2">
+    <input type="number" :value="value.x" :step="opts.step || 1" @input="e => update('x', e.target.value)" />
+    <input type="number" :value="value.y" :step="opts.step || 1" @input="e => update('y', e.target.value)" />
+  </div>
+</template>
+```
+
+```js
+// In your spec
+import Vec2Edit from './Vec2Edit.vue'
+
+const Vec2Type = {
+  name: 'Vec2',
+  slug: 'vec2',
+  component: Vec2Edit,
+}
+
+export const spec = {
+  settings: {
+    spawnPoint: {
+      name: 'Spawn Point',
+      type: Vec2Type,
+      opts: { step: 0.5 },
+      default: { x: 0, y: 0 },
+      mount: 'bottom',
+    }
+  }
+}
+```
+
+> **Note:** The `lint` and `validate` functions on the setting definition work the same way for custom types as for built-in types — `lint` is applied to whatever value your component emits on `change`, and `validate` runs on blur.
 
 ---
 
