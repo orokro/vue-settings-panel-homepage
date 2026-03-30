@@ -135,7 +135,7 @@
 			<iframe
 				width="100%"
 				style="width: 100%; aspect-ratio: 16/9; max-width: 1200px;"
-				src="https://www.youtube.com/embed/h8QUzUtAqDI?si=T5IAY3ZcZGBOPbHv"
+				src="https://www.youtube.com/watch?v=lzsGuybSp0Y"
 				title="YouTube video player"
 				frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
@@ -154,19 +154,9 @@
 	
 		<br><br>
 		<h3>With NPM:</h3>	
-		<pre class="code">npm install vue-win-mgr</pre>
+		<pre class="code">npm install vue-settings-panel</pre>
 		Then...
-		<pre class="code">import { WindowManager, FRAME_STYLE } from 'vue-win-mgr';</pre>
-		Or get everything:
-		<pre class="code">
-import { 
-	WindowManager, 
-	FRAME_STYLE,
-	WindowManagerContext,
-	WindowFrameContext,
-	WindowContext
-} from 'vue-win-mgr';
-		</pre>
+		<pre class="code">import { VueSettingsPanel, TYPES, createSettings } from 'vue-settings-panel';</pre>
 
 		<br><br>
 		<h2>Check out vue-win-mgr over here:</h2>
@@ -175,9 +165,9 @@ import {
 			<div class="box">
 				<div>
 					Find it on
-					<a href="https://www.npmjs.com/package/vue-win-mgr" target="_blank">NPM:</a>
+					<a href="https://www.npmjs.com/package/vue-settings-panel" target="_blank">NPM:</a>
 				</div>
-				<a href="https://www.npmjs.com/package/vue-win-mgr" target="_blank">
+				<a href="https://www.npmjs.com/package/vue-settings-panel" target="_blank">
 					<img class="site-logo" src="/img/npm_logo.png" alt="NPM Logo" height="70px"/>
 				</a>
 			</div>
@@ -274,7 +264,7 @@ import IntroVideoBox from './components/IntroVideoBox.vue';
 			height: 100vh;
 
 			// just a nice gradient
-			background: linear-gradient(#b0e9fa, #695675);
+			background: linear-gradient(#f3fdff, #bcced1);
 
 			// always on bottom, no interaction
 			z-index: -1;
@@ -379,7 +369,7 @@ import IntroVideoBox from './components/IntroVideoBox.vue';
 
 		.code-screen{
 			box-sizing: content-box;
-			border-left: 3px solid #7f49a0;
+			border-left: 3px solid #077B95;
 			margin-left: 30px;
 		}
 

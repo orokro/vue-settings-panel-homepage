@@ -26,8 +26,8 @@
 		<p class="blurb-bottom">
 			<div>
 				Check out the live demo here!<br>
-				<a href="https://orokro.github.io/vue-win-mgr-3d-demo/" target="_blank">
-					https://orokro.github.io/vue-win-mgr-3d-demo/
+				<a href="https://orokro.github.io/test-vue-settings-panel/#" target="_blank">
+					https://orokro.github.io/test-vue-settings-panel/#
 				</a>
 			</div>
 		</p>
