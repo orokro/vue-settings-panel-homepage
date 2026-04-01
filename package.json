@@ -1,27 +1,27 @@
 {
-	"name": "three-query-homepage",
-	"version": "0.0.0",
-	"private": true,
-	"type": "module",
-	"scripts": {
-		"dev": "vite --host",
-		"build": "vite build",
-		"preview": "vite preview"
-	},
-	"dependencies": {
-		"highlight.js": "^11.11.1",
-		"markdown-it": "^14.1.0",
-		"markdown-it-anchor": "^9.2.0",
-		"markdown-it-container": "^4.0.0",
-		"markdown-it-emoji": "^3.0.0",
-		"sass": "^1.89.0",
-		"three": "^0.176.0",
-		"three-query": "^0.9.10",
-		"vue": "^3.5.13"
-	},
-	"devDependencies": {
-		"@vitejs/plugin-vue": "^5.2.3",
-		"vite": "^6.2.4",
-		"vite-plugin-vue-devtools": "^7.7.2"
-	}
+    "version":  "0.0.0",
+    "name":  "vue-pick-n-plop-homepage",
+    "scripts":  {
+                    "preview":  "vite preview",
+                    "build":  "vite build",
+                    "dev":  "vite --host"
+                },
+    "devDependencies":  {
+                            "@vitejs/plugin-vue":  "^5.2.3",
+                            "vite":  "^6.2.4",
+                            "vite-plugin-vue-devtools":  "^7.7.2"
+                        },
+    "type":  "module",
+    "dependencies":  {
+                         "markdown-it-anchor":  "^9.2.0",
+                         "markdown-it-container":  "^4.0.0",
+                         "three":  "^0.176.0",
+                         "markdown-it":  "^14.1.0",
+                         "highlight.js":  "^11.11.1",
+                         "sass":  "^1.89.0",
+                         "vue":  "^3.5.13",
+                         "vue-pick-n-plop":  "file:../vue-pick-n-plop",
+                         "markdown-it-emoji":  "^3.0.0"
+                     },
+    "private":  true
 }

@@ -11,7 +11,7 @@
 	<br><br><br><br>
 	<IntroVideoBox
 		video-url="Demo-Reel.mp4"
-		top-blurb="Check out the demo reel below & scroll down to learn how to use vue-settings-panel!"
+		top-blurb="Check out the demo reel below & scroll down to learn how to use vue-pick-n-plop!"
 	/>
 
 	<!-- overview video -->
@@ -21,36 +21,36 @@
 	<div class="overview-box">
 
 		<div align="center">
-			<img class="logo" src="/img/VSP_logo.png" alt="Vue Win Mgr Logo" width="200px"/>
+			<img class="logo" src="/img/VPNP_logo.png" alt="Vue Win Mgr Logo" width="300px"/>
 		</div>
 
-		<h2>vue-settings-panel In a Nutshell:</h2>
+		<h2>vue-pick-n-plop In a Nutshell:</h2>
 		<br>
-		<p>vue-settings-panel is really easy to set up and use in your Vue3 projects.</p>
-		<p>First, after installing the library you'll want to import the important bits:</p>
+		<p>vue-pick-n-plop is really easy to set up and use in your Vue3 projects.</p>
+		<p>First, after installing the library you'll want to import the core plugin:</p>
 		<br>
 		<img src="/img/overview_00_imports.png" alt="Code Snippet Showing Imports" width="100%"/>
 		<br>
-		<p>Next you need to define a specification object, with categories for settings defined in an array, as well as an object of settings definitions.</p>
+		<p>Next, mount the `PNPDragLayer` at the root of your application. This layer ensures dragged items are never clipped by `overflow: hidden` containers.</p>
 		<br>
 		<img src="/img/overview_10_define_spec.png" alt="Define Specification" width="100%"/>
 		<br>
-		<p>You can also use the optional <code>createSttings</code> method to make an object with all your settings and default values prefilled.</p>
+		<p>Now you can use directives to make any element draggable or a dropzone. Directives keep your templates clean and logic decoupled.</p>
 		<br>
-		<p>If you wish to listen to changes to settings, you can also pass an <code>@settings-changed</code> callback to the <code>VueSettingsPanel</code> component.</p>
+		<p>The library supports complex features like multi-selection, custom drag ghosts, and integrated sorting with midpoint-threshold detection.</p>
 		<img src="/img/overview_20_optional.png" alt="Optional Settings" width="100%"/>
 		<br>
-		<p>Lastly, just drop the <code>&lt;VueSettingsPanel /&gt;</code> component into your template.</p>
-		<p>You can also provide a <code>:theme-colors="{}"</code> prop to customize the colors of the panel if you want.</p>
+		<p>Lastly, just add the directives to your elements and you're good to go!</p>
+		<p></p>
 		<br>
 		<img src="/img/overview_30_template.png" alt="Template Example" width="100%"/>
 		<br>
 
 		<br>
-		<h2>vue-settings-panel Tutorial:</h2>
+		<h2>vue-pick-n-plop Tutorial:</h2>
 		<br>
 		<p>
-			Below is a full tutorial for how to get started with with the <code>vue-settings-panel</code>!
+			Below is a full tutorial for how to get started with with the <code>vue-pick-n-plop</code>!
 		</p>
 		<br>
 		<div align="center" style="min-height: 60vh;">
@@ -76,22 +76,22 @@
 	
 		<br><br>
 		<h3>With NPM:</h3>	
-		<pre class="code">npm install vue-settings-panel</pre>
+		<pre class="code">npm install vue-pick-n-plop</pre>
 		Then...
 		<pre class="code">
-import { VueSettingsPanel, TYPES, createSettings } from 'vue-settings-panel';
-import 'vue-settings-panel/dist/style.css';</pre>
+import { VueSettingsPanel, TYPES, createSettings } from 'vue-pick-n-plop';
+import 'vue-pick-n-plop/dist/style.css';</pre>
 
 		<br><br>
-		<h2>Check out vue-settings-panel over here:</h2>
+		<h2>Check out vue-pick-n-plop over here:</h2>
 		<div class="row">
 
 			<div class="box">
 				<div>
 					Find it on
-					<a href="https://www.npmjs.com/package/vue-settings-panel" target="_blank">NPM:</a>
+					<a href="https://www.npmjs.com/package/vue-pick-n-plop" target="_blank">NPM:</a>
 				</div>
-				<a href="https://www.npmjs.com/package/vue-settings-panel" target="_blank">
+				<a href="https://www.npmjs.com/package/vue-pick-n-plop" target="_blank">
 					<img class="site-logo" src="/img/npm_logo.png" alt="NPM Logo" height="70px"/>
 				</a>
 			</div>
@@ -99,9 +99,9 @@ import 'vue-settings-panel/dist/style.css';</pre>
 			<div class="box">
 				<div>
 					Find it on
-					<a href="https://github.com/orokro/vue-settings-panel" target="_blank">GitHub:</a>
+					<a href="https://github.com/orokro/vue-pick-n-plop" target="_blank">GitHub:</a>
 				</div>
-				<a href="https://github.com/orokro/vue-settings-panel" target="_blank">
+				<a href="https://github.com/orokro/vue-pick-n-plop" target="_blank">
 					<img class="site-logo" src="/img/github_logo.png" alt="GitHub Logo" height="100px"/>
 				</a>
 			</div>
@@ -305,3 +305,4 @@ import IntroVideoBox from './components/IntroVideoBox.vue';
 	}
 	
 </style>
+

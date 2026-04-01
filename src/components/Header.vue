@@ -16,7 +16,7 @@
 			<!-- the entire logo will link to github cuz why not -->
 			<a 
 				class="github-link"
-				href="https://github.com/orokro/vue-settings-panel"
+				href="https://github.com/orokro/vue-pick-n-plop"
 				target="_blank"
 			>
 
@@ -24,7 +24,7 @@
 				<div class="logo-circle">
 					<img 
 						class="logo" 
-						src="/img/VSP_logo.png"
+						src="/img/VPNP_logo.png"
 						alt="Logo"
 						height="100%"
 					/>
@@ -33,7 +33,7 @@
 				<!-- logo text -->
 				<h1 class="logo-text box-bg-color">
 					<span>
-						vue-settings-panel
+						vue-pick-n-plop
 					</span>
 				</h1>
 
@@ -196,10 +196,10 @@ onUnmounted(() => {
 		width: 100vw;
 
 		// dark blur background
-		background: rgba(158, 238, 205, 0.6);
+		background: rgba(175, 158, 238, 0.6);
 		backdrop-filter: blur(15px);
 
-		border-bottom: 3px solid #077B95;
+		border-bottom: 3px solid #6A5DA5;
 
 		// gradient background
 		.bg-horizontal-gradient {
@@ -212,7 +212,7 @@ onUnmounted(() => {
 
 		// common bg color
 		.box-bg-color {
-			background: #d9f4fe;
+			background: #ded9fe;
 		}
 
 		// stack stuff left
@@ -233,9 +233,9 @@ onUnmounted(() => {
 
 		// flex box for header logo
 		.logo-box {
-
+			
 			// fixed size
-			width: 440px;
+			width: 375px;
 			height: 80px;
 
 			/* border: 1px solid red; */
@@ -269,7 +269,7 @@ onUnmounted(() => {
 				// fixed position next to logo image
 				position: absolute;
 				bottom: 7px;
-				left: 150px;
+				left: 120px;
 				height: 40px;
 
 				// pretty corners
@@ -279,7 +279,7 @@ onUnmounted(() => {
 				padding: 0px 20px 0px 5px;
 
 				// text styles
-				color: #35AA8F;
+				color: #6A5DA5;
 				font-weight: bolder;
 				font-style: italic;
 
@@ -300,7 +300,7 @@ onUnmounted(() => {
 				// fixed above the logo
 				position: absolute;
 				top: 12px;
-				left: 150px;
+				left: 120px;
 				height: 22px;
 				width: 120px;
 
@@ -321,7 +321,7 @@ onUnmounted(() => {
 					font-weight: inherit;
 					position: relative;
 					top: -4px;
-					color: #35AA8F
+					color: #6A5DA5
 				}
 
 				&:hover {
@@ -378,7 +378,7 @@ onUnmounted(() => {
 					cursor: pointer;
 					
 					// text styles
-					color: #35AA8F;
+					color: #6A5DA5;
 					font-weight: bold;
 					transition: color 0.3s ease;
 
@@ -394,7 +394,7 @@ onUnmounted(() => {
 					}
 					
 					&.active {
-						color: #d9f4fe;
+						color: #ded9fe;
 						font-weight: bolder;
 					}
 					
@@ -413,7 +413,7 @@ onUnmounted(() => {
 					width: 82.5px;
 
 					// nice teal styles
-					background: #35AA8F;
+					background: #6A5DA5;
 
 					// same shape as .nav-container
 					border-radius: 40px 5px;
@@ -430,3 +430,4 @@ onUnmounted(() => {
 	}// .header
 	
 </style>
+
