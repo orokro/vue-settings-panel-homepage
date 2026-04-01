@@ -189,7 +189,10 @@ import IntroVideoBox from './components/IntroVideoBox.vue';
 
 			// just a nice gradient
 			// background: linear-gradient(#dcffdc, #889e72);
-			background: linear-gradient(#d4fcb9, #729e74);
+			// background: linear-gradient(#d4fcb9, #729e74);
+			// background: linear-gradient(#e6ebe3, #d4e7d5);
+			// background: linear-gradient(#d3ebb9, #385034);
+			background: linear-gradient(#b9ebe7, #343550);
 
 			// always on bottom, no interaction
 			z-index: -1;
@@ -202,7 +205,8 @@ import IntroVideoBox from './components/IntroVideoBox.vue';
 
 			// required content to make pseudo element work
 			content: "";
-			opacity: 0.33;
+			opacity: 0.4;
+			mix-blend-mode: multiply;
 			// fill screen
 			position: fixed;
 			inset: 0px 0px 0px 0px;

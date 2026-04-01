@@ -96,7 +96,7 @@ defineProps({
 			align-items: center;
 
 			font-size: 1.1rem;
-			color: #367222;
+			color: #1d4410;
 			a {
 				font-style: italic;
 			}
