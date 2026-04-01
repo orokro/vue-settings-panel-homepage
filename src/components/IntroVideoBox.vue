@@ -96,14 +96,14 @@ defineProps({
 			align-items: center;
 
 			font-size: 1.1rem;
-			color: #015a6e;
+			color: #367222;
 			a {
 				font-style: italic;
 			}
 			
 
 			div {
-				background: rgba(158, 238, 205, 0.6);
+				background: rgba(139, 201, 119, 0.6);
 				border-radius: 100px;
 				padding: 20px 25px;
 			}

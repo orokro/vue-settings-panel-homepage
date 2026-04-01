@@ -33,7 +33,7 @@
 		
 		/* border: 1px solid red; */
 
-		background: rgba(158, 238, 205, 0.25);
+		background: rgba(175, 158, 238, 0.25);
 		font-size: 30px;
 		color: white;
 		text-align: center;
@@ -41,8 +41,8 @@
 		padding: 5px;
 
 		// well do some cool nesting borders
-		border-top: 3px solid #077B95;
-		border-bottom: 3px solid #077B95;
+		border-top: 3px solid #6A5DA5;
+		border-bottom: 3px solid #6A5DA5;
 
 		h2 {
 
@@ -55,14 +55,14 @@
 
 	.outer-border-2 {
 		padding: 3px 0px;
-		border-top: 2px solid #077B95;
-		border-bottom: 2px solid #077B95;
+		border-top: 2px solid #6A5DA5;
+		border-bottom: 2px solid #6A5DA5;
 	}
 
 	.outer-border-1 {
 		padding: 2px 0px;
-		border-top: 1px solid #077B95;
-		border-bottom: 1px solid #077B95;
+		border-top: 1px solid #6A5DA5;
+		border-bottom: 1px solid #6A5DA5;
 
 		/* box-sizing: content-box; */
 		margin-top: 150px;

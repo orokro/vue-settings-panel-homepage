@@ -188,7 +188,8 @@ import IntroVideoBox from './components/IntroVideoBox.vue';
 			height: 100vh;
 
 			// just a nice gradient
-			background: linear-gradient(#f3fdff, #bcced1);
+			// background: linear-gradient(#dcffdc, #889e72);
+			background: linear-gradient(#d4fcb9, #729e74);
 
 			// always on bottom, no interaction
 			z-index: -1;
