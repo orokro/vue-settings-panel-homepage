@@ -57,7 +57,7 @@
 			<iframe
 				width="100%"
 				style="width: 100%; aspect-ratio: 16/9; max-width: 1200px;"
-				src="https://www.youtube.com/embed/lzsGuybSp0Y?si=_8oncldvIKGlMmLv"
+				src="https://www.youtube.com/embed/ApTfoWx6yB8"
 				title="YouTube video player"
 				frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
