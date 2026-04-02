@@ -26,8 +26,8 @@
 		<p class="blurb-bottom">
 			<div>
 				Check out the live demo here!<br>
-				<a href="https://orokro.github.io/vue-pick-n-plop/#" target="_blank">
-					https://orokro.github.io/vue-pick-n-plop/#
+				<a href="https://orokro.github.io/vue-pick-n-plop/demo/" target="_blank">
+					https://orokro.github.io/vue-pick-n-plop/demo/
 				</a>
 			</div>
 		</p>

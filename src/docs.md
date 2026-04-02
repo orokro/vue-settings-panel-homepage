@@ -1,9 +1,3 @@
-# 🫳 vue-pick-n-plop
-
-> A sophisticated, directive-driven drag-and-drop library for Vue 3. Designed for complex UI interactions, featuring world-space animations, robust multi-selection, integrated sorting with midpoint-threshold detection, and a global drag layer that defies `overflow: hidden`.
-
----
-
 ## 📚 Table of Contents
 
 - [🚀 Introduction](#-introduction)
