@@ -29,24 +29,25 @@
 		<p>vue-pick-n-plop is really easy to set up and use in your Vue3 projects.</p>
 		<p>First, after installing the library you'll want to import the core plugin:</p>
 		<br>
-		<img src="/img/overview_00_imports.png" alt="Code Snippet Showing Imports" width="100%"/>
+		<img src="/img/overview_10_load_plugin.png" alt="Load PNP Plugin" width="100%"/>
+		<br>
 		<br>
 		<p>Next, mount the `PNPDragLayer` at the root of your application. This layer ensures dragged items are never clipped by `overflow: hidden` containers.</p>
 		<br>
-		<img src="/img/overview_10_define_spec.png" alt="Define Specification" width="100%"/>
+		<img src="/img/overview_15_add_layer.png" alt="Add &lt;PNPDropLayer/&gt; to App" width="100%"/>
+		<br>
 		<br>
 		<p>Now you can use directives to make any element draggable or a dropzone. Directives keep your templates clean and logic decoupled.</p>
+		<img src="/img/overview_20_basic_setup.png" alt="Set up Directives" width="100%"/>
 		<br>
-		<p>The library supports complex features like multi-selection, custom drag ghosts, and integrated sorting with midpoint-threshold detection.</p>
-		<img src="/img/overview_20_optional.png" alt="Optional Settings" width="100%"/>
 		<br>
-		<p>Lastly, just add the directives to your elements and you're good to go!</p>
+		<p>Lastly, You can set up call backs for both dropped items, as well as on drop zones.
+			The contexts you passed in to either will available in both handlers.</p>
 		<p></p>
 		<br>
-		<img src="/img/overview_30_template.png" alt="Template Example" width="100%"/>
 		<br>
-
-		<br>
+		<img src="/img/overview_30_handlers.png" alt="Set up Directives" width="100%"/>
+		<br><br>
 		<h2>vue-pick-n-plop Tutorial:</h2>
 		<br>
 		<p>
@@ -79,8 +80,14 @@
 		<pre class="code">npm install vue-pick-n-plop</pre>
 		Then...
 		<pre class="code">
-import { VueSettingsPanel, TYPES, createSettings } from 'vue-pick-n-plop';
-import 'vue-pick-n-plop/dist/style.css';</pre>
+import { createApp } from 'vue';
+import App from './App.vue';
+import PNP from "vue-pick-n-plop";
+
+const app = createApp(App);
+app.use(PNP);
+app.mount('#app');
+</pre>
 
 		<br><br>
 		<h2>Check out vue-pick-n-plop over here:</h2>

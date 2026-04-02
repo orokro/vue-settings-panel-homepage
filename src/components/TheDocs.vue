@@ -61,12 +61,12 @@ onMounted(async () => {
 	.markdown-box {
 
 		background: white;
-
+		// border: 1px solid black;
 		max-width: 1200px;
 		margin: 0 auto;
 		padding: 20px;
 
-		overflow-x: clip;
+		// overflow-x: scroll;
 	}
 
 </style>
